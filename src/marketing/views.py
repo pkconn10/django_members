@@ -19,17 +19,17 @@ members_endpoint = '{api_url}/lists/{list_id}/members'.format(
 )
 
 
-def subscribe(email):
-    data = {
-        "email_address": email,
-        "status": "subscribed"
-    }
-    r = requests.post(
-        members_endpoint,
-        auth=("", MAILCHIMP_API_KEY),
-        data=json.dumps(data)
-    )
-    return r.status_code, r.json()
+# def subscribe(email):
+#     data = {
+#         "email_address": email,
+#         "status": "subscribed"
+#     }
+#     r = requests.post(
+#         members_endpoint,
+#         auth=("", MAILCHIMP_API_KEY),
+#         data=json.dumps(data)
+#     )
+#     return r.status_code, r.json()
 
 
 def email_list_signup(request):
