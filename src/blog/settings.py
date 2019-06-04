@@ -92,14 +92,14 @@ WSGI_APPLICATION = "blog.wsgi.application"
 #         }
 #     }
 # else:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'blogdb',
-        'USER': 'blog_admin',
-        'PASSWORD': 'oktober1',
-        'HOST': 'localhost',
-        'PORT': '',
+DATABASES = {
+'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'blogdb',
+    'USER': 'blog_admin',
+    'PASSWORD': 'oktober1',
+    'HOST': 'localhost',
+    'PORT': '',
     }
 }
 
