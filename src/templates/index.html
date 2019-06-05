@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- Hero Section-->
-<section
+<section>
   style="background: url({% static 'img/hero.jpg' %}); background-size: cover; background-position: center center"
   class="hero"
 >
@@ -58,7 +58,7 @@
                 <h2 class="h4">{{ obj.title }}</h2>
               </a>
             </header>
-            <p>{{ obj.overview | linebreaks | truncatechars: 200 }}</p>
+            <p>{{ obj.overview|linebreaks|truncatechars: 200 }}</p>
             <footer class="post-footer d-flex align-items-center">
               <a href="#" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar">
@@ -73,7 +73,7 @@
                 </div></a
               >
               <div class="date">
-                <i class="icon-clock"></i> {{ obj.timestamp | timesince }} ago
+                <i class="icon-clock"></i> {{ obj.timestamp|timesince }} ago
               </div>
               <div class="comments">
                 <i class="icon-comment"></i>{{ obj.comment_count }}
@@ -138,7 +138,7 @@
             <h3 class="h4">{{ obj.title }}</h3></a
           >
           <p class="text-muted">
-            {{ obj.overview | linebreaks | truncatechars: 200 }}
+            {{ obj.overview|linebreaks|truncatechars: 200 }}
           </p>
         </div>
       </div>
